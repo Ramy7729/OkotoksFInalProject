@@ -1,1 +1,94 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.topBorder {
+  background-color: #010e54;
+  padding: 5px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+div > h1 {
+  font-size: 1.5rem;
+  font-family: 'Cinzel Decorative', cursive;
+  color: #010e54;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+#mobileHeader {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 12vw auto 1fr;
+      grid-template-columns: 12vw auto 1fr;
+  place-items: center;
+  min-height: 10vh;
+}
+
+#mobileHeader img {
+  margin-left: 5px;
+  max-width: 100%;
+}
+
+#mobileHamMenu #mobileCheckbox {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+  opacity: 0;
+  z-index: 5;
+}
+
+#mobileHamMenu #mobileCheckbox:checked ~ #mobileHeaderMenu {
+  top: 200px;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#mobileContainer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  z-index: 4;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  bottom: 10px;
+}
+
+#mobileContainer .hamLine {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+#mobileHeaderMenu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200, 1fr));
+  place-items: center;
+  width: 100%;
+  height: 50%;
+  background-color: #010e54;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  top: -15vh;
+}
+
+#mobileHeaderMenu a {
+  font-size: 2rem;
+  font-family: 'Chonburi', cursive;
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
