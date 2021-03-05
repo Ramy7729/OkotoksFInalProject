@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +28,7 @@ div > h1 {
   font-size: 1.5rem;
   font-family: 'Cinzel Decorative', cursive;
   color: #010e54;
-  margin-left: 22px;
+  margin-left: 15px;
   margin-top: 10px;
 }
 
@@ -45,8 +42,7 @@ div > h1 {
 }
 
 #mobileHeader img {
-  margin-left: 7px;
-  margin-top: 3px;
+  margin-left: 5px;
   max-width: 100%;
 }
 
@@ -108,38 +104,6 @@ div > h1 {
   color: white;
 }
 
-img {
-  max-width: 100%;
-}
-
-.colorBlock {
-  background-color: #010e54;
-  padding: 5px;
-}
-
-.colorBlock p {
-  font-family: 'Quattrocento', serif;
-  font-size: 1.5rem;
-  color: white;
-}
-
-h2 {
-  font-size: 1.5em;
-  font-family: 'Chonburi', cursive;
-  color: #010e54;
-}
-
-h2 + p {
-  font-family: 'Quattrocento', serif;
-  font-size: 1.5rem;
-  color: black;
-}
-
-div > img {
-  max-width: 100%;
-  margin-top: 20px;
-}
-
 .footerGrid {
   display: -ms-grid;
   display: grid;
@@ -162,6 +126,17 @@ h3 p {
   color: black;
 }
 
+.colorBlock {
+  background-color: #010e54;
+  padding: 5px;
+}
+
+.colorBlock p {
+  font-family: 'Quattrocento', serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
 .fa-facebook-square {
   color: #4267B2;
 }
@@ -169,4 +144,4 @@ h3 p {
 .fa-twitter {
   color: #00ACEF;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styleMenu.css.map */
