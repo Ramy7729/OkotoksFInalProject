@@ -3,23 +3,24 @@ $primaryBlue: #010e54;
 .footerGrid {
     display: grid;
     place-items: center;
-    
-    
+
     div {
         margin: 7px auto;
         text-align: center;
     }
 }
 
-h3 {
-    color: white;
-    font-family: 'Chonburi', cursive;
-
-    p {
-        font-family: 'Quattrocento', serif;
-        font-size: 1.5rem;
-        color: black;
+ footer { 
+    
+    h4 {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
     }
+        
+    p {
+            font-family: 'Quattrocento', serif;
+            color: white;
+        }
 }
 
 .colorBlock {
@@ -28,7 +29,6 @@ h3 {
 
     p {
         font-family: 'Quattrocento', serif;
-        font-size: 1.5rem;
         color: white;
     }
 }

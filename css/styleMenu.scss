@@ -1,4 +1,53 @@
 $primaryBlue: #010e54;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+
 @import "_header";
 @import "_footer";
 
+
+
+.menuGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    place-items: center;
+    line-height: 2;
+}
+
+.menuContentItem {
+    padding: 1em 1.5em;
+    text-align: center;
+}
+
+.menuItem {
+    font-family: 'Open Sans', sans-serif;
+    color: $primaryBlue;
+    font-weight: 600;
+}
+
+.menuDescription {
+    font-family: 'Quattrocento', serif;
+}
+     
+    h2 {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+h3 {
+    color: $primaryBlue;
+    font-family: 'Quattrocento', serif;
+    font-weight: bolder;
+
+    p {
+        color:$primaryBlue;
+    }
+}
+
+img {
+    max-width: 100%;
+}

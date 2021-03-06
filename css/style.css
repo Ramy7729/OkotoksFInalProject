@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -103,7 +103,7 @@ div > h1 {
 
 #mobileHeaderMenu a {
   font-size: 2rem;
-  font-family: 'Chonburi', cursive;
+  font-family: 'Quattrocento', serif;
   text-decoration: none;
   color: white;
 }
@@ -115,21 +115,20 @@ img {
 .colorBlock {
   background-color: #010e54;
   padding: 5px;
+  color: white;
 }
 
 .colorBlock p {
   font-family: 'Quattrocento', serif;
-  font-size: 1.5rem;
-  color: white;
 }
 
-h2 {
+h3 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
-  font-family: 'Chonburi', cursive;
   color: #010e54;
 }
 
-h2 + p {
+h3 + p {
   font-family: 'Quattrocento', serif;
   font-size: 1.5rem;
   color: black;
@@ -151,15 +150,14 @@ div > img {
   text-align: center;
 }
 
-h3 {
+footer h4 {
   color: white;
-  font-family: 'Chonburi', cursive;
+  font-family: 'Open Sans', sans-serif;
 }
 
-h3 p {
+footer p {
   font-family: 'Quattrocento', serif;
-  font-size: 1.5rem;
-  color: black;
+  color: white;
 }
 
 .fa-facebook-square {
