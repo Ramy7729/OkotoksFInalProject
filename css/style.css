@@ -160,6 +160,12 @@ footer p {
   color: white;
 }
 
+footer a {
+  font-family: 'Quattrocento', serif;
+  color: white;
+  text-decoration: none;
+}
+
 .fa-facebook-square {
   color: #4267B2;
 }

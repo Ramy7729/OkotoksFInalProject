@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+@import '_header';
+@import '_footer';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    padding: 1em 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    
+    
+}
+
+div>p {
+    font-family: 'Quattrocento', serif;
+    text-align: justify;
+}
+
+div>img {
+    margin-top: 10px;
+}
+
+.doubleLine {
+    max-width: 80%;
+    border-top: 4px double $primaryBlue;
+    padding: 10px 0;
+    margin-top: 20px;
+    
+}
