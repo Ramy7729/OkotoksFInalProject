@@ -1,50 +1,26 @@
-$primaryBlue: #010e54;
+@import '_variables';
 
-.footerGrid {
+footer { 
+    background-color: $primaryColor;
+    padding-top: 3em;
+    color:$white;
     display: grid;
     place-items: center;
-
+    
     div {
         margin: 7px auto;
         text-align: center;
     }
-}
 
- footer { 
-    
     h4 {
-        color: white;
-        font-family: 'Open Sans', sans-serif;
+        color: $white;
+        font-family: $sansFont;
+        margin-bottom: 10px;
     }
         
-    p {
-        font-family: 'Quattrocento', serif;
-        color: white;
-    }
-
-    a {
-        font-family: 'Quattrocento', serif;
-        color: white;
+    p, a {
+        color: $white;
+        margin-top: 10px;
         text-decoration: none;
     }
 }
-
-.colorBlock {
-    background-color: $primaryBlue;
-    padding: 5px;
-
-    p {
-        font-family: 'Quattrocento', serif;
-        color: white;
-    }
-}
-
-.fa-facebook-square {
-    color: #4267B2;
-}
-
-.fa-twitter {
-    color: #00ACEF;
-}
-
-
