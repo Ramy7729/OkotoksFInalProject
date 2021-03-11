@@ -20,10 +20,14 @@ body {
 
 .fa-facebook-square {
     color: $faceBookColor;
+    font-size: 2.5em;
+    
 }
 
 .fa-twitter {
     color: $twitterColor;
+    font-size: 2.5em;
+    margin-right: 14px;
 }
 
 img {
@@ -74,6 +78,7 @@ img {
         font-family: $sansFont;
         font-size: 1.5em;
         color: $primaryColor;
+        
     }
     p {
         padding: 0.5em;
@@ -92,6 +97,7 @@ img {
     font-size: 1.5em;
     font-weight: normal;
     color: $white;
+    
     
     h2 {
         color: $white;
@@ -157,7 +163,7 @@ img {
 }
 
 .locContent {
-
+        
     .locRow {
         margin: 1em 0;
         display: grid;
@@ -174,6 +180,8 @@ img {
         }
     }
 }
+
+
 
 @media only screen and (min-width: 600px) {
 
@@ -194,6 +202,10 @@ img {
 
     .locContent {
 
+        div>h2 {
+            font-size: 2em;
+        }
+
         .locRow {
             margin: 1em 0;
             display: grid;
@@ -207,6 +219,29 @@ img {
             }
         }        
     }
+
+    .menuGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+   
+    .menuItemSplit {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto;
+    }
+
+    .videoContainer {
+        height: 25%;
+        margin: 0 auto;
+        padding-top: 50%;
+        
+        
+        
+    }
+
+
 }
 
 

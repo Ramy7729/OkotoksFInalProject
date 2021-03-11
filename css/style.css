@@ -102,6 +102,12 @@
   color: #ffffff;
 }
 
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3em !important;
+  }
+}
+
 footer {
   background-color: #69240e;
   padding-top: 3em;
@@ -128,6 +134,19 @@ footer p, footer a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 600px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1.5fr 2fr;
+        grid-template-columns: 1.5fr 1.5fr 2fr;
+    place-items: start;
+    text-align: center;
+    font-size: 1.2em;
+    padding-right: 20px;
+  }
+}
+
 html, body {
   height: 100%;
 }
@@ -144,10 +163,13 @@ body {
 
 .fa-facebook-square {
   color: #4267B2;
+  font-size: 2.5em;
 }
 
 .fa-twitter {
   color: #00ACEF;
+  font-size: 2.5em;
+  margin-right: 14px;
 }
 
 img {
@@ -311,6 +333,9 @@ img {
   .textContainer p {
     font-size: 1.3rem;
   }
+  .locContent div > h2 {
+    font-size: 2em;
+  }
   .locContent .locRow {
     margin: 1em 0;
     display: -ms-grid;
@@ -323,6 +348,27 @@ img {
   }
   .locContent .locRow p {
     font-size: 2em;
+  }
+  .menuGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .menuItemSplit {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .videoContainer {
+    height: 25%;
+    margin: 0 auto;
+    padding-top: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
