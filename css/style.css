@@ -81,8 +81,6 @@
 #mobileHeader #mobileHeaderMenu {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   place-items: center;
   width: 100%;
   height: 50%;
@@ -102,9 +100,40 @@
   color: #ffffff;
 }
 
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   h1 {
     font-size: 3em !important;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  header #mobileHeader {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  header #mobileHeader #mobileHamMenu {
+    background-color: #867a3c;
+    width: 100%;
+  }
+  header #mobileHeader #mobileHamMenu #mobileCheckbox, header #mobileHeader #mobileHamMenu #mobileContainer {
+    display: none;
+  }
+  header #mobileHeader #mobileHamMenu #mobileHeaderMenu {
+    width: 80%;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    opacity: 1;
+    position: static;
+    padding: 0;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  header #mobileHeader #mobileHamMenu #mobileHeaderMenu a:hover {
+    background-color: #69240e;
+    border: 1px solid #000000;
   }
 }
 
@@ -115,6 +144,7 @@ footer {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  padding-bottom: 3em;
 }
 
 footer div {
@@ -134,7 +164,7 @@ footer p, footer a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   footer {
     display: -ms-grid;
     display: grid;
@@ -143,7 +173,7 @@ footer p, footer a {
     place-items: start;
     text-align: center;
     font-size: 1.2em;
-    padding-right: 20px;
+    padding-bottom: 1em;
   }
 }
 
@@ -174,30 +204,44 @@ body {
 
 img {
   width: 100%;
+  display: inherit;
 }
 
-.ctaImg {
+.splashSize {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 65%;
+}
+
+.ctaButtonContainer {
   position: relative;
 }
 
-.ctaImg .buttonWrapper {
-  display: block;
-  text-align: center;
+.ctaButton {
+  -webkit-box-shadow: inset 0px 1px 0px 0px #a6827e;
+          box-shadow: inset 0px 1px 0px 0px #a6827e;
+  background-color: #867a3c;
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #4d3534;
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.ctaImg .button {
-  border: none;
-  display: inline-block;
-  font-size: 1em;
-  padding: 1em 1em;
-  width: auto;
-  font-family: "Open Sans", sans-serif;
-  background-color: #867a3c;
-  color: #ffffff;
-  text-decoration: none;
+.ctaButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #634b30), to(#7d5d3b));
+  background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+  background-color: #69240e;
 }
 
 .line {
@@ -227,11 +271,14 @@ img {
 .textContainer p {
   padding: 0.5em;
   font-size: 1rem;
-  text-align: justify;
 }
 
 .centerText {
   text-align: center;
+}
+
+.justifiedText {
+  text-align: justify;
 }
 
 .redContainer {
@@ -257,6 +304,17 @@ img {
 .decNone {
   text-decoration: none;
   color: #000000;
+}
+
+.squisher {
+  max-width: 60%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.bkgdColor {
+  background-color: #867a3c;
+  color: #ffffff;
 }
 
 .videoContainer {
@@ -299,6 +357,14 @@ img {
   color: #69240e;
 }
 
+.menuGrid .menuDescription, .menuGrid .menuPrice {
+  display: inline;
+}
+
+.menuGrid .menuPrice {
+  color: #69240e;
+}
+
 .menuBtmMgn {
   margin-bottom: 20px;
 }
@@ -321,6 +387,13 @@ img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .squisher {
+    max-width: 90%;
+    margin: 30px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -357,7 +430,7 @@ img {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
-  .menuItemSplit {
+  .itemSplit {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 2fr 2fr;
@@ -369,6 +442,49 @@ img {
     height: 25%;
     margin: 0 auto;
     padding-top: 50%;
+    display: inline-table;
+  }
+  .ctaButton {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .menuGrid {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .menuGrid h3 {
+    font-size: 2em;
+  }
+  .menuGrid .itemSplit {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr 2fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .twoCol {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .twoCol p {
+    padding: 5em 5em;
+    line-height: 1.7em;
+  }
+  .twoColRev {
+    direction: rtl;
+  }
+  .twoColRev p {
+    direction: ltr;
+  }
+  .splashSize {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 65vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,7 @@ footer {
     color:$white;
     display: grid;
     place-items: center;
+    padding-bottom: 3em;
     
     div {
         margin: 7px auto;
@@ -25,7 +26,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
 
     footer {
         display: grid;
@@ -34,6 +35,6 @@ footer {
         place-items: start;
         text-align: center;
         font-size: 1.2em;
-        padding-right: 20px;
+        padding-bottom: 1em;
     }
 }

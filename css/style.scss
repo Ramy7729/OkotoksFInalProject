@@ -32,30 +32,49 @@ body {
 
 img {
     width: 100%;
+    display: inherit;
 }
 
-.ctaImg {
+.splashSize {
+    object-fit: cover;
+    height: 65%;
+
+}
+
+.ctaButtonContainer {
     position: relative;
-    .buttonWrapper {
-        display: block;
-        text-align: center;
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-    }
-
-    .button {
-        border: none;
-        display: inline-block;
-        font-size: 1em;
-        padding: 1em 1em;
-        width: auto;
-        font-family: $sansFont;
-        background-color: $secColorLight;
-        color: $white;
-        text-decoration: none;
-    }
 }
+
+.ctaButton {
+	box-shadow: inset 0px 1px 0px 0px #a6827e;
+	// background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+	background-color: $secColor;
+	border-radius: 3px;
+	border: 1px solid $white;
+	display: inline-block;
+	cursor: pointer;
+	color: $white;
+	font-family: $sansFont;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #4d3534;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.ctaButton:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color: $primaryColor;
+}
+.ctaButton:active {
+	// position:relative;
+	// top:1px;
+}
+
+        
 
 .line {
     height: 7px;
@@ -83,12 +102,15 @@ img {
     p {
         padding: 0.5em;
         font-size: 1rem;
-        text-align: justify;
     }
 }
 
 .centerText {
     text-align: center;
+}
+
+.justifiedText {
+    text-align: justify;
 }
 
 .redContainer {
@@ -117,6 +139,18 @@ img {
     text-decoration: none;
     color: $black;
 }
+
+.squisher {
+    max-width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.bkgdColor {
+    background-color: $secColor;
+    color: $white;
+}
+
 
 
 .videoContainer {
@@ -154,7 +188,13 @@ img {
     .menuItem {
         font-family: $sansFont;
         color: $primaryColor;
-        
+    }
+    .menuDescription, .menuPrice {
+        display: inline;
+    }
+    .menuPrice {
+        color: $primaryColor;
+
     }
 }
 
@@ -182,6 +222,17 @@ img {
 }
 
 
+
+@media only screen and (max-width: 900px) {
+    .squisher {
+        max-width: 90%;
+        margin: 30px;
+        
+        
+        // margin-top: 30px;
+        // margin-bottom: 30px;
+    }
+}
 
 @media only screen and (min-width: 600px) {
 
@@ -226,7 +277,7 @@ img {
         grid-template-rows: auto;
     }
    
-    .menuItemSplit {
+    .itemSplit {
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-template-rows: auto;
@@ -236,13 +287,65 @@ img {
         height: 25%;
         margin: 0 auto;
         padding-top: 50%;
-        
-        
-        
+        display: inline-table;
     }
 
+    .ctaButton {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    
+    .menuGrid{
+        max-width: 80%;
+        margin: 0 auto;
+       
+        h3 {
+            font-size: 2em;
+        }
+
+       .itemSplit {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: auto;
+        }
+    }    
+
+    .twoCol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        p {
+            padding: 5em 5em;
+            line-height: 1.7em;
+        }
+
+    }
+    
+    .twoColRev {
+        direction: rtl;
+        
+        p {
+            direction: ltr;
+        }
+    }
+
+    .splashSize {
+        object-fit: cover;
+        height: 65vh;
+    
+    }
+    
+    // img:first-of-type {
+    //     object-fit: cover;
+    //     height: 77vh;
+    // }
 
 }
+
+
+
 
 
 
