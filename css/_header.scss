@@ -1,8 +1,7 @@
 @import '_variables';
 
 .topBorder {
-    background-color: $secColor;
-    padding: 5px;
+    background-color: $primaryColor;
     color: $white;
     margin-bottom: 10px;
     text-align: center;
@@ -18,7 +17,11 @@
     grid-template-columns: auto 3em;
     place-items: center;
     min-height: 10vh;
-
+    
+    a {
+        text-decoration: none;
+    }
+    
     img {
         margin-left: 7px;
         margin-top: 3px;
@@ -76,21 +79,35 @@
         place-items: center;
         width: 100%;
         height: 50%;
-        background-color: $secColor;
+        background-color: $secColorLight;
         position: absolute;
         left: 0;
         opacity: 0;
         transition: all 0.5s ease-in-out;
         top: -15vh;
         z-index: 4;
+        
     
         a {
             font-size: 2rem;
             text-decoration: none;
-            color: $white;
+            color: $primaryColor;
+            
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    
+    #mobileHamMenu {
+
+        .doubleLine {
+            display: none;
         }
     }
 }
+
 
 @media only screen and (min-width: 600px) {
 
@@ -106,8 +123,7 @@
             display: grid;
             grid-template-columns: auto;
             #mobileHamMenu {
-
-                background-color: $secColor;
+                background-color: $white;
                 width: 100%;
                 #mobileCheckbox, #mobileContainer {
 
@@ -122,20 +138,21 @@
                     position: static;
                     padding: 0;
                     grid-template-columns: 1fr 1fr 1fr 1fr;
-                    a:hover {
+                    background-color: $white;
                         
-                        background-color: $primaryColor;
-                        border: 1px solid $black;
-
-
+                    a {
+                            // padding-bottom: 20px;
+                        &:hover {
+                        background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+                        background-color:#634b30;
+                        color: $white;
+                        padding-bottom:0;
+                        transition: 0.4s;
+                        
+                        }   
                     }
-                
                 }
-                 
-
             }
-
         }
-
     }
 }

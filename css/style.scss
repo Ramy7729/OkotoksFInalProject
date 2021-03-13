@@ -38,7 +38,6 @@ img {
 .splashSize {
     object-fit: cover;
     height: 65%;
-
 }
 
 .ctaButtonContainer {
@@ -48,8 +47,8 @@ img {
 .ctaButton {
 	box-shadow: inset 0px 1px 0px 0px #a6827e;
 	// background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
-	background-color: $secColor;
-	border-radius: 3px;
+	background-color: $primaryColor;
+	// border-radius: 3px;
 	border: 1px solid $white;
 	display: inline-block;
 	cursor: pointer;
@@ -68,13 +67,9 @@ img {
 .ctaButton:hover {
 	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
 	background-color: $primaryColor;
-}
-.ctaButton:active {
-	// position:relative;
-	// top:1px;
+    
 }
 
-        
 
 .line {
     height: 7px;
@@ -90,6 +85,10 @@ img {
     border-top: 2px solid $white;
 }
 
+.lineHeight {
+    line-height: 1.5em;
+}
+
 .textContainer {
     padding: 2em 0.5em;
 
@@ -103,6 +102,11 @@ img {
         padding: 0.5em;
         font-size: 1rem;
     }
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .centerText {
@@ -126,12 +130,18 @@ img {
     }
 }
 
+
+.bolder {
+    font-weight: bold;
+}
+
 .doubleLine {
     max-width: 90%;
     border-top: 4px double $primaryColor;
     padding: 10px 0;
     margin-top: 20px;
     margin: 0 auto;
+    
           
 }
 
@@ -140,18 +150,38 @@ img {
     color: $black;
 }
 
-.squisher {
+.squish {
     max-width: 60%;
     margin: auto;
     margin-top: 30px;
 }
 
+
 .bkgdColor {
-    background-color: $secColor;
+    background-color: $secColorLight;
     color: $white;
 }
 
+.prmTextColor {
+    color: $primaryColor;
+}
 
+.mrgBttm {
+    margin-bottom: 30px;
+}
+
+.mrgCenter {
+    margin: 0 auto;
+}
+
+.mainColor {
+    background-color: $mainBkgColor;
+}
+
+.padding {
+    margin: 0 auto;
+    padding: 0.5px;
+}
 
 .videoContainer {
     position: relative;
@@ -203,6 +233,7 @@ img {
 }
 
 .locContent {
+   
         
     .locRow {
         margin: 1em 0;
@@ -221,16 +252,31 @@ img {
     }
 }
 
+.vertCard {
+    display: grid;
+    grid-template-rows: auto;
+    max-width: 70%;
+    margin: auto;
+}
+
+.nrrwContainer {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 
 
 @media only screen and (max-width: 900px) {
-    .squisher {
-        max-width: 90%;
+    
+    .squish {
+        max-width: 100%;
         margin: 30px;
-        
-        
-        // margin-top: 30px;
-        // margin-bottom: 30px;
+    }
+    
+    .squisher {
+        max-width: 100%;
+        margin: auto;
+    
     }
 }
 
@@ -281,7 +327,7 @@ img {
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-template-rows: auto;
-    }
+}
 
     .videoContainer {
         height: 25%;
@@ -293,6 +339,11 @@ img {
     .ctaButton {
         font-size: 1.5em;
     }
+}
+
+.squisher {
+    max-width: 90%;
+    
 }
 
 @media only screen and (min-width: 900px) {
@@ -316,6 +367,7 @@ img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         
+        
         p {
             padding: 5em 5em;
             line-height: 1.7em;
@@ -337,13 +389,25 @@ img {
     
     }
     
-    // img:first-of-type {
-    //     object-fit: cover;
-    //     height: 77vh;
-    // }
-
+    .vertCard {
+      margin: 30px auto;
+      
+        p {
+            padding: 2em 3em;
+        }
+        
+    }
+    
+    .squisher {
+        max-width: 90%;
+        margin: auto;
+        
+    }
+#dskFontSize {
+    font-size: 1.5em;
 }
 
+}
 
 
 

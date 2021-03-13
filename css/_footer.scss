@@ -3,7 +3,7 @@
 footer { 
     background-color: $primaryColor;
     padding-top: 3em;
-    color:$white;
+    color: $white;
     display: grid;
     place-items: center;
     padding-bottom: 3em;
@@ -30,7 +30,7 @@ footer {
 
     footer {
         display: grid;
-        grid-template-columns: 1.5fr 1.5fr 2fr;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr;
         // grid-auto-rows: 2fr 2fr;
         place-items: start;
         text-align: center;
