@@ -42,7 +42,6 @@
   font-family: "Cinzel Decorative", cursive;
   color: #69240E;
   margin-left: 22px;
-  margin-top: 10px;
 }
 
 #mobileHeader #mobileHamMenu #mobileCheckbox {
@@ -57,6 +56,7 @@
 #mobileHeader #mobileHamMenu #mobileCheckbox:checked ~ #mobileHeaderMenu {
   top: 200px;
   opacity: 1;
+  visibility: visible;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -91,6 +91,7 @@
   position: absolute;
   left: 0;
   opacity: 0;
+  visibility: hidden;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   top: -15vh;
@@ -132,6 +133,7 @@
   header #mobileHeader #mobileHamMenu #mobileHeaderMenu {
     width: 80%;
     margin: auto;
+    margin-bottom: 22px;
     display: -ms-grid;
     display: grid;
     opacity: 1;
@@ -140,6 +142,11 @@
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: #ffffff;
+    visibility: visible;
+  }
+  header #mobileHeader #mobileHamMenu #mobileHeaderMenu .active {
+    background-color: #69240E;
+    color: #ffffff;
   }
   header #mobileHeader #mobileHamMenu #mobileHeaderMenu a:hover {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #634b30), to(#7d5d3b));
@@ -276,6 +283,22 @@ img {
   line-height: 1.5em;
 }
 
+.sectionTextCon {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sectionTextCon h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  color: #69240E;
+}
+
+.sectionTextCon p {
+  padding: 0.5em;
+  font-size: 1.3rem;
+}
+
 .textContainer {
   padding: 2em 0.5em;
 }
@@ -296,6 +319,16 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
+}
+
+.gridCenter {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
 }
 
 .centerText {
@@ -336,9 +369,13 @@ img {
 }
 
 .squish {
-  max-width: 60%;
+  max-width: 90%;
   margin: auto;
   margin-top: 30px;
+}
+
+.squish h2 {
+  text-align: center;
 }
 
 .bkgdColor {
@@ -356,10 +393,6 @@ img {
 
 .mrgCenter {
   margin: 0 auto;
-}
-
-.mainColor {
-  background-color: #F5F5EA;
 }
 
 .padding {
@@ -408,7 +441,7 @@ img {
 }
 
 .menuGrid .menuDescription, .menuGrid .menuPrice {
-  display: inline;
+  display: block;
 }
 
 .menuGrid .menuPrice {
@@ -417,6 +450,14 @@ img {
 
 .menuBtmMgn {
   margin-bottom: 20px;
+}
+
+.menuTopPad {
+  padding-top: 20px;
+}
+
+.btmPad {
+  padding-bottom: 20px;
 }
 
 .locContent .locRow {
@@ -453,6 +494,50 @@ img {
   margin: 0 auto;
 }
 
+.sectionGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-bottom: 35px;
+}
+
+.sectionGrid div h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #69240E;
+  text-align: center;
+}
+
+.sectionGrid div p {
+  font-family: "Quattrocento", serif;
+  font-size: 1.3rem;
+  color: #69240E;
+  padding-top: 5px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .doubleLine2 {
+    max-width: 90%;
+    border-top: 4px double #69240E;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+  .sectionGrid {
+    display: block;
+  }
+  .squish {
+    max-width: 100%;
+  }
+  .noPointerEvent {
+    pointer-events: visible !important;
+  }
+  .mrgTop {
+    margin-top: 30px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .squish {
     max-width: 100%;
@@ -462,17 +547,18 @@ img {
     max-width: 100%;
     margin: auto;
   }
+  .mrgTop {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   .topBorder p {
     font-size: 1.5em;
   }
-  .textContainer {
-    padding: 2em 0.5em;
-  }
   .textContainer p {
     font-size: 1.3rem;
+    margin: auto;
   }
   .locContent div > h2 {
     font-size: 2em;
@@ -506,6 +592,13 @@ img {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
+  .doubleLine2 {
+    max-width: 90%;
+    border-top: 4px double #69240E;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin: 0 auto;
+  }
   .videoContainer {
     height: 25%;
     margin: 0 auto;
@@ -517,8 +610,8 @@ img {
   }
 }
 
-.squisher {
-  max-width: 90%;
+.noPointerEvent {
+  pointer-events: none;
 }
 
 @media only screen and (min-width: 900px) {
@@ -543,8 +636,12 @@ img {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  .twoCol h2 {
+    text-align: center;
+  }
   .twoCol p {
-    padding: 5em 5em;
+    padding-left: 5em;
+    padding-right: 5em;
     line-height: 1.7em;
   }
   .twoColRev {
@@ -552,6 +649,9 @@ img {
   }
   .twoColRev p {
     direction: ltr;
+  }
+  .mrgTopBtm {
+    margin: 20px 0;
   }
   .splashSize {
     -o-object-fit: cover;
@@ -565,8 +665,13 @@ img {
     padding: 2em 3em;
   }
   .squisher {
-    max-width: 90%;
+    max-width: 45%;
     margin: auto;
+  }
+  .doubleLine2 {
+    max-width: 100%;
+    border-top: 4px double #69240E;
+    padding: 10px 0;
   }
   #dskFontSize {
     font-size: 1.5em;

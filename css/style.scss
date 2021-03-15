@@ -89,6 +89,26 @@ img {
     line-height: 1.5em;
 }
 
+.sectionTextCon {
+    text-align: center;
+    margin-bottom: 30px;
+    
+    
+    h2 {
+        font-family: $sansFont;
+        font-size: 1.5em;
+        color: $primaryColor;
+        
+    }
+    p {
+        padding: 0.5em;
+        font-size: 1.3rem;
+        
+    }
+}
+
+
+
 .textContainer {
     padding: 2em 0.5em;
 
@@ -109,6 +129,12 @@ img {
     grid-template-columns: 1fr 2fr;
 }
 
+.gridCenter {
+    display: grid;
+    align-items: center;
+    grid-template-rows: auto;
+}
+
 .centerText {
     text-align: center;
 }
@@ -123,6 +149,7 @@ img {
     font-size: 1.5em;
     font-weight: normal;
     color: $white;
+    
     
     
     h2 {
@@ -151,9 +178,19 @@ img {
 }
 
 .squish {
-    max-width: 60%;
+    max-width: 90%;
     margin: auto;
     margin-top: 30px;
+
+    h2 {
+        text-align: center;
+    }
+
+    // p {
+    //     max-width: 70%;
+    // }
+    
+    
 }
 
 
@@ -170,12 +207,10 @@ img {
     margin-bottom: 30px;
 }
 
+
+
 .mrgCenter {
     margin: 0 auto;
-}
-
-.mainColor {
-    background-color: $mainBkgColor;
 }
 
 .padding {
@@ -220,7 +255,7 @@ img {
         color: $primaryColor;
     }
     .menuDescription, .menuPrice {
-        display: inline;
+        display: block;
     }
     .menuPrice {
         color: $primaryColor;
@@ -230,6 +265,15 @@ img {
 
 .menuBtmMgn {
     margin-bottom:20px;
+    // margin-top: 20px;
+}
+
+.menuTopPad {
+    padding-top: 20px;
+}
+
+.btmPad {
+    padding-bottom: 20px;
 }
 
 .locContent {
@@ -264,6 +308,69 @@ img {
     margin: 0 auto;
 }
 
+.sectionGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // grid-column-gap: 3em;
+    margin-bottom: 35px;
+    
+    div {
+        
+        h2 {
+            font-family: $sansFont;
+            color: $primaryColor;
+            text-align: center;
+            
+        }    
+        
+        p {
+            font-family: $serifFont;
+            font-size: 1.3rem;   
+            color: $primaryColor;
+            padding-top: 5px;
+            margin: 0 auto;
+           
+        }
+    
+    
+    }
+    
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .doubleLine2 {
+        max-width:90%;
+        border-top: 4px double $primaryColor;
+        padding: 10px 0;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+
+    .sectionGrid {
+        display: block;
+      
+        
+    }
+
+    .squish {
+        max-width: 100%;
+    }
+    
+    .noPointerEvent {
+        pointer-events: visible !important;
+    
+    }
+
+    .mrgTop {
+        margin-top: 30px;
+    }
+
+}
+
 
 
 @media only screen and (max-width: 900px) {
@@ -278,7 +385,17 @@ img {
         margin: auto;
     
     }
+
+    .mrgTop {
+        margin-top: 30px;
+    }
+
 }
+
+
+
+    
+
 
 @media only screen and (min-width: 600px) {
 
@@ -290,10 +407,11 @@ img {
     }
 
     .textContainer {
-        padding: 2em 0.5em;
-    
+        
         p {
             font-size: 1.3rem;
+            margin: auto;
+            
         }
     }
 
@@ -329,7 +447,16 @@ img {
         grid-template-rows: auto;
 }
 
-    .videoContainer {
+    
+    .doubleLine2 {
+        max-width:90%;
+        border-top: 4px double $primaryColor;
+        padding: 10px 0;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+    
+        .videoContainer {
         height: 25%;
         margin: 0 auto;
         padding-top: 50%;
@@ -341,10 +468,10 @@ img {
     }
 }
 
-.squisher {
-    max-width: 90%;
-    
+.noPointerEvent {
+    pointer-events: none;
 }
+
 
 @media only screen and (min-width: 900px) {
     
@@ -366,10 +493,17 @@ img {
     .twoCol {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    
         
+        
+        
+        h2 {
+            text-align: center;
+        }
         
         p {
-            padding: 5em 5em;
+            padding-left: 5em;
+            padding-right: 5em;
             line-height: 1.7em;
         }
 
@@ -383,6 +517,10 @@ img {
         }
     }
 
+    .mrgTopBtm {
+        margin: 20px 0;
+    }
+    
     .splashSize {
         object-fit: cover;
         height: 65vh;
@@ -399,13 +537,25 @@ img {
     }
     
     .squisher {
-        max-width: 90%;
+        max-width: 45%;
         margin: auto;
         
     }
-#dskFontSize {
-    font-size: 1.5em;
-}
+
+    .doubleLine2 {
+        max-width: 100%;
+        border-top: 4px double $primaryColor;
+        padding: 10px 0;
+        // margin-top: 30px ;
+        // margin: 0 auto;
+    
+    }
+
+   
+    
+    #dskFontSize {
+        font-size: 1.5em;
+    }
 
 }
 
