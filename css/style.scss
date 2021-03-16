@@ -46,9 +46,7 @@ img {
 
 .ctaButton {
 	box-shadow: inset 0px 1px 0px 0px #a6827e;
-	// background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
 	background-color: $primaryColor;
-	// border-radius: 3px;
 	border: 1px solid $white;
 	display: inline-block;
 	cursor: pointer;
@@ -62,14 +60,12 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
+
 .ctaButton:hover {
 	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
 	background-color: $primaryColor;
-    
 }
-
 
 .line {
     height: 7px;
@@ -93,21 +89,17 @@ img {
     text-align: center;
     margin-bottom: 30px;
     
-    
     h2 {
         font-family: $sansFont;
         font-size: 1.5em;
         color: $primaryColor;
-        
     }
+    
     p {
         padding: 0.5em;
         font-size: 1.3rem;
-        
     }
 }
-
-
 
 .textContainer {
     padding: 2em 0.5em;
@@ -116,8 +108,8 @@ img {
         font-family: $sansFont;
         font-size: 1.5em;
         color: $primaryColor;
-        
     }
+    
     p {
         padding: 0.5em;
         font-size: 1rem;
@@ -150,13 +142,10 @@ img {
     font-weight: normal;
     color: $white;
     
-    
-    
     h2 {
         color: $white;
     }
 }
-
 
 .bolder {
     font-weight: bold;
@@ -168,8 +157,6 @@ img {
     padding: 10px 0;
     margin-top: 20px;
     margin: 0 auto;
-    
-          
 }
 
 .decNone {
@@ -185,18 +172,6 @@ img {
     h2 {
         text-align: center;
     }
-
-    // p {
-    //     max-width: 70%;
-    // }
-    
-    
-}
-
-
-.bkgdColor {
-    background-color: $secColorLight;
-    color: $white;
 }
 
 .prmTextColor {
@@ -205,12 +180,6 @@ img {
 
 .mrgBttm {
     margin-bottom: 30px;
-}
-
-
-
-.mrgCenter {
-    margin: 0 auto;
 }
 
 .padding {
@@ -259,13 +228,11 @@ img {
     }
     .menuPrice {
         color: $primaryColor;
-
     }
 }
 
 .menuBtmMgn {
     margin-bottom:20px;
-    // margin-top: 20px;
 }
 
 .menuTopPad {
@@ -278,7 +245,6 @@ img {
 
 .locContent {
    
-        
     .locRow {
         margin: 1em 0;
         display: grid;
@@ -311,7 +277,6 @@ img {
 .sectionGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // grid-column-gap: 3em;
     margin-bottom: 35px;
     
     div {
@@ -320,7 +285,6 @@ img {
             font-family: $sansFont;
             color: $primaryColor;
             text-align: center;
-            
         }    
         
         p {
@@ -329,16 +293,9 @@ img {
             color: $primaryColor;
             padding-top: 5px;
             margin: 0 auto;
-           
         }
-    
-    
     }
-    
-
 }
-
-
 
 @media only screen and (max-width: 600px) {
     
@@ -352,8 +309,6 @@ img {
 
     .sectionGrid {
         display: block;
-      
-        
     }
 
     .squish {
@@ -362,7 +317,6 @@ img {
     
     .noPointerEvent {
         pointer-events: visible !important;
-    
     }
 
     .mrgTop {
@@ -370,8 +324,6 @@ img {
     }
 
 }
-
-
 
 @media only screen and (max-width: 900px) {
     
@@ -383,19 +335,12 @@ img {
     .squisher {
         max-width: 100%;
         margin: auto;
-    
     }
 
     .mrgTop {
         margin-top: 30px;
     }
-
 }
-
-
-
-    
-
 
 @media only screen and (min-width: 600px) {
 
@@ -411,7 +356,6 @@ img {
         p {
             font-size: 1.3rem;
             margin: auto;
-            
         }
     }
 
@@ -429,6 +373,7 @@ img {
             h2 {
                 font-size: 2em;
             }
+            
             p {
                 font-size: 2em;
             }
@@ -445,9 +390,8 @@ img {
         display: grid;
         grid-template-columns: 2fr 2fr;
         grid-template-rows: auto;
-}
+    }
 
-    
     .doubleLine2 {
         max-width:90%;
         border-top: 4px double $primaryColor;
@@ -456,11 +400,11 @@ img {
         margin: 0 auto;
     }
     
-        .videoContainer {
-        height: 25%;
-        margin: 0 auto;
-        padding-top: 50%;
-        display: inline-table;
+    .videoContainer {
+    height: 25%;
+    margin: 0 auto;
+    padding-top: 50%;
+    display: inline-table;
     }
 
     .ctaButton {
@@ -494,9 +438,6 @@ img {
         display: grid;
         grid-template-columns: 1fr 1fr;
     
-        
-        
-        
         h2 {
             text-align: center;
         }
@@ -524,39 +465,26 @@ img {
     .splashSize {
         object-fit: cover;
         height: 65vh;
-    
-    }
-    
-    .vertCard {
-      margin: 30px auto;
-      
-        p {
-            padding: 2em 3em;
-        }
-        
     }
     
     .squisher {
         max-width: 45%;
         margin: auto;
-        
     }
 
     .doubleLine2 {
         max-width: 100%;
         border-top: 4px double $primaryColor;
         padding: 10px 0;
-        // margin-top: 30px ;
-        // margin: 0 auto;
-    
     }
 
-   
-    
-    #dskFontSize {
+   #dskFontSize {
         font-size: 1.5em;
     }
 
+    .mrgCenter {
+        margin: auto;
+    }
 }
 
 

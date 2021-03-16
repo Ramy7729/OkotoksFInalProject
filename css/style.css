@@ -378,21 +378,12 @@ img {
   text-align: center;
 }
 
-.bkgdColor {
-  background-color: #F5F5EA;
-  color: #ffffff;
-}
-
 .prmTextColor {
   color: #69240E;
 }
 
 .mrgBttm {
   margin-bottom: 30px;
-}
-
-.mrgCenter {
-  margin: 0 auto;
 }
 
 .padding {
@@ -658,12 +649,6 @@ img {
        object-fit: cover;
     height: 65vh;
   }
-  .vertCard {
-    margin: 30px auto;
-  }
-  .vertCard p {
-    padding: 2em 3em;
-  }
   .squisher {
     max-width: 45%;
     margin: auto;
@@ -675,6 +660,9 @@ img {
   }
   #dskFontSize {
     font-size: 1.5em;
+  }
+  .mrgCenter {
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
